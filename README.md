@@ -30,8 +30,11 @@ A lightweight browser extension to **quickly search URLs, file hashes, domains, 
    - **Highlight any text** (URL, hash, domain, or IP)
    - **Right-click** → Choose **“Search on VirusTotal”**
 
-### 🖱️ 2. Right-Click Menu on Selected Text
-![Right-click option](Sample.png)
+### 🖱️ Right-Click Menu on Selected Text
+  
+<p align="center">
+  <img src="sample.png" alt="Right-click option" width="500">
+</p>
 
 ---
 
