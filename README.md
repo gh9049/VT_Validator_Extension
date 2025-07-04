@@ -1,33 +1,52 @@
-🔍 VT Validator Extension
-A lightweight browser extension to quickly search URLs, hashes, domains, or IPs on VirusTotal via right-click — no API key required!
+# 🔍 VT Validator Extension
 
-🚀 Features
-Right-click selected text and search it directly on VirusTotal
+A lightweight browser extension to **quickly search URLs, file hashes, domains, or IPs on [VirusTotal](https://www.virustotal.com)** via right-click — no API key required!
 
-Supports URLs, file hashes (MD5/SHA256), IPs, and domains
+---
 
-Fast and simple — no API or account setup needed
+## 🚀 Features
 
-📦 How to Install
-Download or clone this repository.
+- Right-click selected text and instantly search it on VirusTotal  
+- Supports:
+  - URLs
+  - File hashes (MD5, SHA1, SHA256)
+  - IP addresses
+  - Domains  
+- No API key or login required  
+- Fast, privacy-respecting, and easy to use
 
-Open:
-    chrome://extensions/ for Google Chrome
-    edge://extensions/ for Microsoft Edge
+---
 
-Enable Developer mode (top right).
+## 📦 How to Install
 
-Click "Load unpacked".
+1. **Download** or **clone** this repository.
+2. Open your browser extensions page:
+   - `chrome://extensions/` for **Google Chrome**
+   - `edge://extensions/` for **Microsoft Edge**
+3. **Enable Developer mode** (top right corner).
+4. Click **"Load unpacked"**.
+5. Select the folder containing the extension files (e.g., `VT_Validator_Extension/`).
+6. Done! Now:
+   - **Highlight any text** (URL, hash, domain, or IP)
+   - **Right-click** → Choose **“Search on VirusTotal”**
 
-Select the folder containing the extension files.
+---
 
-That’s it! Now you can highlight any text, right-click, and choose
-“Search on VirusTotal”.
+## 📝 Notes
 
-📝 Notes
-Make sure the manifest.json, background.js, and icons/icon.png are all present.
+- Works on any **Chromium-based browser**: Chrome, Edge, Brave, Opera, etc.
+- Make sure the following files exist:
+  - `manifest.json`
+  - `background.js`
+  - `icons/icon.png` (48x48 recommended)
 
-Works on any Chromium-based browser (Chrome, Edge, Brave, Opera).
+---
 
-🛡️ Disclaimer
-This tool simply redirects you to VirusTotal’s public search. It does not store, analyze, or log any of your input.
+## 🛡️ Disclaimer
+
+This extension simply redirects your selected input to VirusTotal's public search.  
+It does **not collect, store, or process** any personal data.
+
+---
+
+✅ Happy Hunting!
