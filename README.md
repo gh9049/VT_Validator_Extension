@@ -38,7 +38,7 @@ A lightweight browser extension to **quickly search URLs, file hashes, domains, 
 - Make sure the following files exist:
   - `manifest.json`
   - `background.js`
-  - `icons/icon.png` (48x48 recommended)
+  - `icons/icon.png`
 
 ---
 
