@@ -1,14 +1,8 @@
 chrome.runtime.onInstalled.addListener(() => {
   chrome.contextMenus.create({
-    id: "vtSearchLink",
-    title: "Search on VirusTotal",
-    contexts: ["link"]
-  });
-
-  chrome.contextMenus.create({
     id: "vtSearchText",
     title: "Search on VirusTotal",
-    contexts: ["selection"]
+    contexts: ["selection"],
   });
 });
 
@@ -22,7 +16,9 @@ chrome.contextMenus.onClicked.addListener((info) => {
   }
 
   if (input) {
-    const vtUrl = `https://www.virustotal.com/gui/search/${encodeURIComponent(input)}`;
+    const vtUrl = `https://www.virustotal.com/gui/search/${encodeURIComponent(
+      input
+    )}`;
     chrome.tabs.create({ url: vtUrl });
   }
 });
