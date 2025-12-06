@@ -1,22 +1,22 @@
 {
   "manifest_version": 3,
-  "name": "VirusTotal QuickCheck",
-  "version": "1.0",
-  "description": "Easily check the reputation of URLs, hashes, or domains on VirusTotal.",
-  "permissions": ["contextMenus", "activeTab", "scripting"],
+  "name": "OSINT IP/URL/SHA-Scanner",
+  "version": "3.0.0",
+  "description": "Scan selected text across multiple OSINT tools simultaneously.",
+  "permissions": [
+    "contextMenus",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Configure Scanners"
+  },
   "background": {
     "service_worker": "background.js"
   },
   "icons": {
-  "16": "icons/icon.png",
-  "48": "icons/icon.png",
-  "128": "icons/icon.png"
-},
-"action": {
-  "default_icon": {
-    "16": "icons/icon.png",
-    "48": "icons/icon.png"
+    "16": "icons/main-icon.png",
+    "48": "icons/main-icon.png",
+    "128": "icons/main-icon.png"
   }
-}
-
 }
