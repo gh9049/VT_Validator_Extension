@@ -39,7 +39,7 @@ A lightweight browser extension to **quickly search URLs, file hashes, domains, 
 ---
 
 ## 📝 Notes
-
+  
 - Works on any **Chromium-based browser**: Chrome, Edge, Brave, Opera, etc.
 - Make sure the following files exist:
   - `manifest.json`
