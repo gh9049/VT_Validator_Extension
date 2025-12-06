@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <style>
+    /* CRITICAL: Set explicit width and height */
+    body {
+      width: 260px; /* Slightly wider to fit icons */
+      min-height: 180px;
+      margin: 0;
+      padding: 15px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #7bdbec;
+      color: #333;
+    }
+
+    h3 {
+      margin-top: 0;
+      margin-bottom: 15px;
+      font-size: 16px;
+      border-bottom: 2px solid #79b3df;
+      padding-bottom: 8px;
+    }
+
+    /* Card styling */
+    .option {
+      display: flex;
+      justify-content: space-between; /* Pushes (Icon+Text) to left, Toggle to right */
+      align-items: center;
+      margin-bottom: 12px;
+      font-size: 14px;
+      background: rgb(255, 255, 255);
+      padding: 8px 12px;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+    }
+
+    .option:hover {
+      background-color: #f9f9f9;
+    }
+
+    /* Container for Icon + Text */
+    .label-row {
+      display: flex;
+      align-items: center;
+    }
+
+    /* The Service Icon */
+    .service-icon {
+      width: 20px;
+      height: 20px;
+      margin-right: 10px; /* Space between icon and text */
+      vertical-align: middle;
+    }
+
+    .label-text {
+      font-weight: 500;
+      cursor: default;
+    }
+
+    /* --- THE TOGGLE SWITCH CSS --- */
+    .switch {
+      position: relative;
+      display: inline-block;
+      width: 40px;
+      height: 20px;
+      flex-shrink: 0; /* Prevents toggle from squishing */
+    }
+
+    .switch input { opacity: 0; width: 0; height: 0; }
+
+    .slider {
+      position: absolute;
+      cursor: pointer;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background-color: #ccc;
+      transition: .4s;
+      border-radius: 34px;
+    }
+
+    .slider:before {
+      position: absolute;
+      content: "";
+      height: 16px;
+      width: 16px;
+      left: 2px;
+      bottom: 2px;
+      background-color: white;
+      transition: .4s;
+      border-radius: 50%;
+    }
+
+    input:checked + .slider { background-color: #2196F3; }
+    input:checked + .slider:before { transform: translateX(20px); }
+
+    /* --- FOOTER --- */
+    .footer {
+      margin-top: 20px;
+      font-size: 11px;
+      color: #555;
+      text-align: center;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <h3>Search as u wish :)</h3>
+  
+  <div class="option">
+    <div class="label-row">
+      <img src="icons/VT-icon.png" class="service-icon" alt="VT">
+      <span class="label-text">VirusTotal</span>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="vt">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    <div class="label-row">
+      <img src="icons/abuseipdb-logo.png" class="service-icon" alt="IP">
+      <span class="label-text">AbuseIP DB</span>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="abuse">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="option">
+    <div class="label-row">
+      <img src="icons/palo-alto logo.png" class="service-icon" alt="PA">
+      <span class="label-text">Palo Alto URL</span>
+    </div>
+    <label class="switch">
+      <input type="checkbox" id="palo">
+      <span class="slider"></span>
+    </label>
+  </div>
+
+  <div class="footer">BATBOT</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>
